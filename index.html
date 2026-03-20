@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #ffffff;
+    }
+    .message {
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    Redirecting to finhite, just a minute...
+  </div>
+
+  <script>
+    // Your app deep link (customize this)
+    const appDeepLink = "finhite://(mandates)/mandate-success";
+
+    // Fallback URL (Play Store / App Store / website)
+    const fallbackUrl = "https://yourwebsite.com/download";
+
+    // Try to open the app
+    window.location.href = appDeepLink;
+
+    // Fallback if app is not installed
+    // setTimeout(() => {
+    //   window.location.href = fallbackUrl;
+    // }, 2000);
+  </script>
+</body>
+</html>
